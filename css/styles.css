@@ -107,6 +107,7 @@ margin-right: 0px;
     background-color:#2e2f42;
     border: 1px solid #000;  
     max-width: 1440px;
+    padding: 188px 0px;
 }
 
 .top-title-name {
@@ -239,11 +240,11 @@ display: flex;
 }
 .portfolio-container{
     border: 1px solid #e7e9fc;
-    
     border-top: none;
-    margin-bottom: 8px;
     width: 1128px;
-    padding: 120px 156px;
+    padding: 32px 16px;
+    margin-bottom: 8px;
+
 }
 .portfolio {
     font-weight: 700;
@@ -317,7 +318,8 @@ display: flex;
         text-transform: uppercase;
         color: #4d5ae5;
         margin-right: 76px;
-        display: flex;
+        margin-bottom: 8px
+        display: inline-block;
             align-items: center;
             justify-content: flex-start;
             flex-direction: row;
@@ -343,8 +345,7 @@ font-family: "Raleway", sans-serif;
     white-space:nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
-   
+    overflow: hidden;  
 }
 .container {
   max-width: 1158px;
