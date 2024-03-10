@@ -30,12 +30,13 @@ img {
     height: auto;
 }
 .page header{
-border-bottom: 1px solid#e7e9fc;
 width: 1440px;
 }
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid#e7e9fc;
+
 }
 
 .navigation {
@@ -59,15 +60,16 @@ width: 1440px;
    display: flex; 
 
 }
-
+.menu-item{
+margin-right: 40px;
+}
 .link-navigation {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-right: 40px;
-margin-left: auto;
+    margin-left: auto;
     padding: 24px 0;
     display: block;
 }
@@ -85,14 +87,16 @@ margin-left: auto;
 .address-list{
     display: flex;
 }
-
+.address-list-item{
+    margin-right: 40px;
+}
 .contacts-link{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-right: 40px;
+    
 }
 .link-contacts{
 margin-right: 0px;
@@ -107,7 +111,8 @@ margin-right: 0px;
     background-color:#2e2f42;
     border: 1px solid #000;  
     max-width: 1440px;
-    padding: 188px 0px;
+    padding-top: 180px;
+    padding-bottom: 180px;
 }
 
 .top-title-name {
@@ -236,6 +241,7 @@ display: flex;
 .portfolio-menu {
     background-color:white;
     padding: 120px 0px 120px 0px ;
+    margin-bottom: 8px;
     
 }
 .portfolio-container{
@@ -243,7 +249,6 @@ display: flex;
     border-top: none;
     width: 1128px;
     padding: 32px 16px;
-    margin-bottom: 8px;
 
 }
 .portfolio {
@@ -318,7 +323,7 @@ display: flex;
         text-transform: uppercase;
         color: #4d5ae5;
         margin-right: 76px;
-        margin-bottom: 8px
+        margin-bottom: 16px;
         display: inline-block;
             align-items: center;
             justify-content: flex-start;
@@ -333,11 +338,10 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-    display: flex;
+    display: inline-block;
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 0px;
 }
 .visually-hidden{
     margin: -1px;
