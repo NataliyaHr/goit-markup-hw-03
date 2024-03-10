@@ -155,7 +155,18 @@ margin-right: 0px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
+.visually-hidden {
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0%;
+}
 .service-menu{
 display: flex;
 gap: 24px;
@@ -276,6 +287,7 @@ display: flex;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 16px;
 
 }
 .portfolio-selection-list{
@@ -342,14 +354,6 @@ font-family: "Raleway", sans-serif;
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-}
-.visually-hidden{
-    margin: -1px;
-    border: 0;
-    white-space:nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;  
 }
 .container {
   max-width: 1158px;
