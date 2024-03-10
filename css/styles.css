@@ -12,9 +12,38 @@ a {
 ul,
 ol {
     list-style: none;
+    padding-left: 0;
+        margin: 0;
 }
 .page header{
-     background-color: #fff;
+border-bottom: 1px solid#e7e9fc;
+width: 1440px;
+    height: 72px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -24,13 +53,14 @@ ol {
     letter-spacing: 0.03em;
     text-transform:uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
-
 .logo-part {
     color: #2e2f42;
 }
 .menu{
-    
+   display: flex; 
+
 }
 
 .link-navigation {
@@ -39,7 +69,11 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-right: 40px;
+    padding: 24px 0;
+    display: block;
 }
+
 
 .link-navigation:hover,
 .link-navigation:focus {
@@ -48,6 +82,10 @@ ol {
 
 .address {
 font-style: normal; 
+margin-left: auto;
+}
+.address-list{
+    display: flex;
 }
 
 .contacts-link{
@@ -56,6 +94,7 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-right: 40px;
 }
 
 .contacts-link:hover,
@@ -65,7 +104,8 @@ font-style: normal;
 
 .top-title {
     background-color:#2e2f42;
-   
+    border: 1px solid #000;  
+    max-width: 1440px;
 }
 
 .top-title-name {
@@ -75,6 +115,13 @@ font-style: normal;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 188px;
+}
+.top-wrap{
+
 }
 
 .button {
@@ -85,6 +132,16 @@ font-style: normal;
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 4px;
+            padding: 16px 32px;
+            margin: 0 auto;
+            margin-top: 48px;
+            margin-bottom: 188px;
 }
 
 .button:hover,
@@ -92,13 +149,25 @@ font-style: normal;
     background-color: #404bbf;
     color: #fff;
 }
-
-.service {
-    
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-
+.service-section {
+    padding: 96px 156px;
+}
+.service-menu{
+display: flex;
+gap: 24px;
+}
 .service-list-item {
-   
+width: calc((100% - 2 * 24px) / 4);
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 264px;
 }
 
 .service-name {
@@ -107,6 +176,8 @@ font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    width: 1128px;
 }
 
 .service-description {
@@ -119,9 +190,13 @@ font-style: normal;
 
 .team {
     background-color: #f4f4fd;
+    padding: 120px 0;
    
 }
-
+.team-container{
+    width: 1440px;
+        padding: 96px 156px;
+}
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -130,12 +205,18 @@ font-style: normal;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
-
+.team-list{
+    display: flex;
+    gap: 24px;
+}
 .team-item {
     background-color: #fff;
-
-   
+    width: calc({100% - 3 * 24px / 4});
+    border-radius: 0px 0px 4px 4px;
+     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+         padding: 0px 0px 32px 0px;
 }
 
 .team-member {
@@ -145,21 +226,33 @@ font-style: normal;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
-
+.member-team{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .team-duty {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-bottom: 32px;
 }
 
 .portfolio-menu {
     background-color:white;
+    padding: 120px 0px 120px 0px ;
     
 }
-
+.portfolio-container{
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+    width: 1128px;
+    padding: 120px 156px;
+}
 .portfolio {
     font-weight: 700;
     font-size: 36px;
@@ -168,34 +261,60 @@ font-style: normal;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
-
-
+.portfolio-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-item{
+    width: calc((100% - 48px ) / 3);
+}
 .portfolio-section {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
 
+}
+.portfolio-selection-list{
+    display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+            padding: 32px 16px;
+            width: 360px;
+
+}
 .portfolio-section-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+.portfolio-img{
+    width: 360px;
+}
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
    
 }
-
+.footer-container{
+    padding: 96px 156px;
+}
 .footer-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+    padding: 16px 0px;
 }
 .logo-footer{
     font-family: "Raleway", sans-serif;
@@ -205,6 +324,12 @@ font-style: normal;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-right: 76px;
+        display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 0px;
 }
 .logo-footer-division{
 font-family: "Raleway", sans-serif;
@@ -214,6 +339,11 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 0px;
 }
 .visually-hidden{
     margin: -1px;
@@ -223,4 +353,9 @@ font-family: "Raleway", sans-serif;
     clip: rect(0 0 0 0);
     overflow: hidden;
    
+}
+.container {
+  max-width: 1158px;
+        margin: 0;
+        padding: 0 15px;
 }
