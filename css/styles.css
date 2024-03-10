@@ -149,9 +149,6 @@ margin-right: 0px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.service-section {
-    padding: 96px 156px;
-}
 .service-menu{
 display: flex;
 gap: 24px;
@@ -189,10 +186,7 @@ display: flex;
     padding: 120px 0;
    
 }
-.team-container{
-    width: 1440px;
-        padding: 96px 156px;
-}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -240,15 +234,13 @@ display: flex;
 .portfolio-menu {
     background-color:white;
     padding: 120px 0px 120px 0px ;
-    
-}
-.portfolio-container{
-    border: 1px solid #e7e9fc;
+border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
     width: 1128px;
-    padding: 120px 156px;
+    
 }
+
 .portfolio {
     font-weight: 700;
     font-size: 36px;
@@ -301,9 +293,7 @@ display: flex;
     padding: 100px 0;
    
 }
-.footer-container{
-    padding: 96px 156px;
-}
+
 .footer-description {
     font-size: 16px;
     line-height: 1.5;
