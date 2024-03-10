@@ -15,16 +15,6 @@ ol {
     padding-left: 0;
         margin: 0;
 }
-.page header{
-border-bottom: 1px solid#e7e9fc;
-width: 1440px;
-    height: 72px;
-}
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
 h1,
 h2,
 h3,
@@ -34,11 +24,18 @@ h6,
 p {
     margin: 0;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+.page header{
+border-bottom: 1px solid#e7e9fc;
+width: 1440px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .navigation {
@@ -70,6 +67,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-right: 40px;
+margin-left: auto;
     padding: 24px 0;
     display: block;
 }
@@ -95,6 +93,9 @@ margin-left: auto;
     letter-spacing: 0.02em;
     color: #434455;
     margin-right: 40px;
+}
+.link-contacts{
+margin-right: 0px;
 }
 
 .contacts-link:hover,
@@ -132,16 +133,14 @@ margin-left: auto;
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
-    display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-        border-radius: 4px;
-            padding: 16px 32px;
-            margin: 0 auto;
-            margin-top: 48px;
-            margin-bottom: 188px;
+    display: block;
+    border: none;
+     border-radius: 4px;
+     margin: 0 auto;
+    margin-top: 48px;
+     margin-bottom: 188px;
+    min-width: 169px;
+    height: 56px;
 }
 
 .button:hover,
@@ -356,6 +355,6 @@ font-family: "Raleway", sans-serif;
 }
 .container {
   max-width: 1158px;
-        margin: 0;
+        margin: 0 auto;
         padding: 0 15px;
 }
